@@ -5,3 +5,23 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+center_point = { lat: 50.0515918, lng: 19.9357531 }
+
+
+    River.create(
+      name: 'Desplaines River',
+      description: 'Dirty. Filled with ugly fish.',
+      longitude: center_point[:lng] + rand(-10.00..10.00),
+      latitude: center_point[:lat] + rand(-10.00..10.00),
+      fish: 'Bass'
+    )
+
+    River.create(
+        name: 'Mississippi River',
+        description: 'Largest in the united States',
+        longitude: center_point[:lng] + rand(-10.00..10.00),
+        latitude: center_point[:lat] + rand(-10.00..10.00),
+        fish: 'Bass, Flounder, Gold Fish'
+      )
